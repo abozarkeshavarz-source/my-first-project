@@ -1,5 +1,5 @@
 body{
-    background-color: #121212;
+    background-color: #b43838;
 }
 h1 {
     color: #f8f8f2; /* یک رنگ سفید مایل به خاکستری */
@@ -23,4 +23,25 @@ a:hover {
     max-width: 800px; /* حداکثر عرض محتوا ۸۰۰ پیکسل خواهد بود */
     margin: 40px auto; /* ۴۰ پیکسل فاصله از بالا و پایین، و 'auto' برای چپ و راست */
     padding: 20px; /* ۲۰ پیکسل فاصله داخلی بین محتوا و لبه کانتینر */
+}
+.github-card {
+    display: block; /* باعث میشه تگ <a> مثل یک بلوک رفتار کنه و عرض و ارتفاع بگیره */
+    background-color: #282a36; /* رنگ پس‌زمینه کارت (رنگ زمینه تم دراکولا) */
+    border-radius: 8px; /* گرد کردن گوشه‌های کارت */
+    padding: 20px; /* فاصله داخلی */
+    text-align: center; /* وسط‌چین کردن متن‌های داخل کارت */
+    text-decoration: none; /* حذف خط زیر لینک که از قبل بود */
+    margin-top: 40px; /* کمی فاصله از پاراگراف بالایی */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* انیمیشن نرم برای تغییرات */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* یک سایه ظریف زیر کارت */
+}
+
+.github-card:hover {
+    transform: translateY(-5px); /* وقتی موس روی کارت میره، ۵ پیکسل به بالا حرکت کنه */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* سایه را موقع حرکت، بزرگتر و واضح‌تر کن */
+}
+
+.github-card p {
+    color: #f8f8f2; /* رنگ متن‌های داخل کارت */
+    margin: 5px 0; /* کمی فاصله بین دو پاراگراف */
 }
